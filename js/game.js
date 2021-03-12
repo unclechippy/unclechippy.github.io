@@ -295,7 +295,12 @@ class Game{
         this.player_win_natural_blackjack(his.player_hands[0]);
       }
 
+    }else if (this.house_hand.get_hard_value() == 11){//check for house 21 if ace showing
+      //for tracking insurance - excluded for now
     }
+
+    
+
 
     //only play hands that have been not_played
     while(this.player_unplayed_hands.length > 0){
