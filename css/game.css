@@ -1,0 +1,6 @@
+table, th, td {
+    border: 1px solid black;
+  }
+.stay { background-color: #bde9ba; }
+.hit { background-color: #e9baba; }
+.surrender { background-color: #e29301; }
