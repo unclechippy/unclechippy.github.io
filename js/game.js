@@ -613,6 +613,7 @@ class Data{
   }
 }
 
+//test the deck draws for uniform distribution
 class Tests{
   constructor(){
   }
@@ -624,6 +625,7 @@ class Tests{
     let card;
     let card_index;
     let card_count = [];
+    let results = [];
 
     for (let i = 0; i < ALL_CARDS.length; i++){
       card_count.push(0);
@@ -637,8 +639,11 @@ class Tests{
       card_count[card_index] += 1;
     }
 
-    console.log(card_count);
-    console.log(ALL_CARDS);
+    //log the number of draws of each card compared with the card
+    for (let i = 0; i < ALL_CARDS.length; i ++){
+      results.push(`${ALL_CARDS[i]}, ${card_count[i]}`); 
+    }
+    console.log(results); //log card counts
   }
 }
 
